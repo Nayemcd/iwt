@@ -17,8 +17,7 @@ $_SESSION["serial"] = $row['serial'];
 	
 header("Location: apply/admission.php"); 
     }else { 
-?>
-<script>
+?><script>
 alert('Invalid Scratch Card Details or Has Already been Used');
 
 </script>
