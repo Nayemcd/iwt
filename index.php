@@ -1,4 +1,9 @@
+<?php
+session_start();
+error_reporting(0);
+include('connect.php');
 
+$current_date = date('Y-m-d H:i:s');
 
 if(isset($_POST['btnsubmit']))
 {
@@ -17,7 +22,8 @@ $_SESSION["serial"] = $row['serial'];
 	
 header("Location: apply/admission.php"); 
     }else { 
-?><script>
+?>
+<script>
 alert('Invalid Scratch Card Details or Has Already been Used');
 
 </script>
