@@ -1,9 +1,4 @@
-<?php
-session_start();
-error_reporting(0);
-include('connect.php');
 
-$current_date = date('Y-m-d H:i:s');
 
 if(isset($_POST['btnsubmit']))
 {
